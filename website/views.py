@@ -21,7 +21,7 @@ def contact(request):
 		# 	message_subject + 'from' + message_name, # subject and name
 		# 	message, # message
 		# 	message_email, # from email
-		# 	['zhan114@uwindsor.ca'], # to email
+		# 	['zhansuoyue0710@gmail.com'], # to email
 		# 	)
 
 		return render(request, 'contact.html',{'message_thx':message_thx})
@@ -33,3 +33,6 @@ def research(request):
 
 def resume(request):
 	return render(request, 'resume.html',{})
+
+def paper1(request):
+	return render(request, 'Research/paper1.html',{})
