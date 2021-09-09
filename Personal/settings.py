@@ -1,6 +1,8 @@
 import django_heroku
 import dj_database_url
-from boto.s3.connection import SECRET_KEY EMAIL_USER EMAIL_PASS
+from boto.s3.connection import SECRET_KEY
+from boto.s3.connection import EMAIL_USER
+from boto.s3.connection import EMAIL_PASS  
 # import environ
 # env = environ.Env(
 #     DEBUG = (bool,False)
