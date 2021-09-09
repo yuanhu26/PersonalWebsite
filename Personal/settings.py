@@ -1,5 +1,6 @@
 import django_heroku
 import dj_database_url
+import os
 # from boto3.s3.connection import SECRET_KEY
 # from boto3.s3.connection import EMAIL_USER
 # from boto3.s3.connection import EMAIL_PASS  
