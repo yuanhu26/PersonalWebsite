@@ -1,6 +1,6 @@
 import django_heroku
 import dj_database_url
-import environ
+# import environ
 # Initialise environment variables
 
 from decouple import config
@@ -154,7 +154,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = env('EMAIL_USER')
+EMAIL_HOST_USER = 'zhansuoyue0710@gmail.com'
 EMAIL_HOST_PASSWORD = 'lczjwsleppqymymk'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
