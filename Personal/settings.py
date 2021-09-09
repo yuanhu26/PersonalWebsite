@@ -173,8 +173,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp-mail.outlook.com'
-EMAIL_HOST_USER = 'os.environ['EMAIL_USER']'
-EMAIL_HOST_PASSWORD = 'os.environ['EMAIL_PASS']'
+EMAIL_HOST_USER = os.environ['EMAIL_USER']
+EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASS']
 EMAIL_PORT = 25
 
 django_heroku.settings(locals())
