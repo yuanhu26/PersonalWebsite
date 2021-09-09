@@ -1,6 +1,6 @@
 import django_heroku
 import dj_database_url
-# import environ
+import environ
 # Initialise environment variables
 
 from decouple import config
@@ -21,16 +21,16 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# env = environ.Env(
-#     DEBUG = (bool,False)
-#     )
-# environ.Env.read_env(Path(BASE_DIR, '.env'))
+env = environ.Env(
+    DEBUG = (bool,False)
+    )
+environ.Env.read_env(Path(BASE_DIR, '.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-rr+!5&_7hjwf%=d^b_w7$g!vd&wo*6g2%mggp(75e)3t(qj-56'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -154,8 +154,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'zhansuoyue0710@gmail.com'
-EMAIL_HOST_PASSWORD = 'lczjwsleppqymymk'
+EMAIL_HOST_USER = env('EMAIL_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_PASS')
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
