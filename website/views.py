@@ -18,7 +18,7 @@ def contact(request):
 
 		# send an email
 		send_mail(
-			message_subject + '\nfrom\n' + message_name, # subject and name
+			message_subject + ' from ' + message_name, # subject and name
 			message_email+'\r'+message, # message
 			message_email, # from email
 			['yuanhu0326@gmail.com'], # to email
