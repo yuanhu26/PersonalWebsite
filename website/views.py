@@ -28,11 +28,11 @@ def contact(request):
 	else:
 		return render(request, 'contact.html',{})
 
-def research(request):
-	return render(request, 'research.html',{})
+def projects(request):
+	return render(request, 'projects.html',{})
 
 def resume(request):
 	return render(request, 'resume.html',{})
 
 def paper1(request):
-	return render(request, 'Research/paper1.html',{})
+	return render(request, 'Projects/paper1.html',{})
