@@ -34,5 +34,5 @@ def projects(request):
 def resume(request):
 	return render(request, 'resume.html',{})
 
-def paper1(request):
-	return render(request, 'Projects/paper1.html',{})
+def crypto_asset(request):
+	return render(request, 'Projects/crypto_asset.html',{})
