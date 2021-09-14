@@ -36,3 +36,9 @@ def resume(request):
 
 def crypto_asset(request):
 	return render(request, 'Projects/crypto_asset.html',{})
+
+def DJI30(request):
+	return render(request, 'Projects/DJI30.html',{})
+
+def ETFs(request):
+	return render(request, 'Projects/ETFs.html',{})
