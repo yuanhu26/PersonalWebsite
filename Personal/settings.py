@@ -35,6 +35,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ['SECRET_KEY']
+# SECRET_KEY='django-insecure-rr+!5&_7hjwf%=d^b_w7$g!vd&wo*6g2%mggp(75e)3t(qj-56'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -148,12 +150,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # accounts.google.com/DisplayUnlockCaptcha
 # myaccount.google.com/apppasswords
 
-# Email Settings
-# EMAIL_PORT = 1025
-# EMAIL_HOST_USER = ''
-# EMAIL_HOST_PASSWORD = ''
-# EMAIL_USE_TLS = False
-# EMAIL_USE_SSL = False
+#Email Settings
 
 
 EMAIL_HOST = 'smtp.gmail.com'
