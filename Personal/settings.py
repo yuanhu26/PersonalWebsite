@@ -34,8 +34,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['SECRET_KEY']
-# SECRET_KEY='django-insecure-rr+!5&_7hjwf%=d^b_w7$g!vd&wo*6g2%mggp(75e)3t(qj-56'
+# SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY='django-insecure-rr+!5&_7hjwf%=d^b_w7$g!vd&wo*6g2%mggp(75e)3t(qj-56'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -153,12 +153,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #Email Settings
 
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = os.environ['EMAIL_USER']
-EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASS']
-EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = os.environ['EMAIL_USER']
+# EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASS']
+# EMAIL_USE_TLS = True
+# EMAIL_USE_SSL = False
 
 # EMAIL_USE_TLS = True
 # EMAIL_HOST = 'smtp-mail.outlook.com'
